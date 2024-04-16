@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Noto+Nastaliq+Urdu&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/43296d6011.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/dist/output.css" />
+    <script src="/index.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  </head>
+  <body class="bg-gray-100">
+    <nav id="navbar" class="py-4 z-50 w-full fixed top-0 left-0 text-lg px-10 md:px-32 duration-150">
+      <ul class="text-left flex-row-reverse flex text-xl md:text-3xl justify-between items-center">
+        <li>أ/ أحمد عبدالغني</li>
+        <div class="flex items-center gap-5">
+          <a
+            href="signin.html"
+            class="py-1 px-1 gap-1 md:py-2 md:px-4 text-sm md:text-lg flex items-center md:gap-2 duration-200 hover:shadow-md text-yellow-600 rounded-lg hover:text-yellow-500"
+          >
+            تسجيل الدخول <i class="fa-solid fa-lock"></i>
+          </a>
+          <a
+            href="signup.html"
+            class="py-1 px-1 md:py-2 md:px-4 text-sm md:text-lg flex items-center md:gap-2 bg-yellow-600 rounded-lg shadow-md text-gray-100 hover:bg-transparent border-2 border-yellow-600 hover:text-yellow-600 duration-200"
+          >
+            ! أنشئ حساب <i class="fa-solid fa-plus"></i>
+          </a>
+        </div>
+      </ul>
+    </nav>
+    <main class="bg-gray-100 px-8 text-right pt-20 mt-12">
+      <section class="py-5 px-10 bg-white rounded-md">
+        <h1 class="text-3xl sm:text-5xl py-3 pt-6 px-6 font-semibold">
+          جميع <span class="text-yellow-500 title2 t">الكورسات</span>
+        </h1>
+        <div class="swiper mySwiper py-10">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide cursor-pointer bg-gray-100">
+              <div class="rounded-md w-full">
+                <img
+                  src="/qism.jpg"
+                  alt=""
+                  class="object-cover hover:opacity-85 duration-200 rounded-md w-full h-full"
+                />
+              </div>
+              <div class="flex flex-col p-2 rounded-md bg-gray-100 text-right mb-3 w-full items-end gap-2">
+                <h3>اسم القسم</h3>
+                <div class="flex items-center gap-3">
+                  <span
+                    class="w-fit self-end py-1 px-2 text-sm rounded-full bg-yellow-400 hover:bg-yellow-300 duration-200"
+                    >150</span
+                  >
+                  <span>السعر</span>
+                </div>
+                <p class="text-sm text-gray-500 pb-2">وصف قصير عشان تضيفه يا محموووووووووود</p>
+              </div>
+            </div>
+            <div class="swiper-slide cursor-pointer bg-gray-100">
+              <div class="rounded-md w-full">
+                <img
+                  src="/qism.jpg"
+                  alt=""
+                  class="object-cover hover:opacity-85 duration-200 rounded-md w-full h-full"
+                />
+              </div>
+              <div class="flex flex-col p-2 rounded-md bg-gray-100 text-right mb-3 w-full items-end gap-2">
+                <h3>اسم القسم</h3>
+                <div class="flex items-center gap-3">
+                  <span
+                    class="w-fit self-end py-1 px-2 text-sm rounded-full bg-yellow-400 hover:bg-yellow-300 duration-200"
+                    >150</span
+                  >
+                  <span>السعر</span>
+                </div>
+                <p class="text-sm pb-2 text-gray-500">وصف قصير عشان تضيفه يا محموووووووووود</p>
+              </div>
+            </div>
+            <div class="swiper-slide cursor-pointer bg-gray-100">
+              <div class="rounded-md w-full">
+                <img
+                  src="/qism.jpg"
+                  alt=""
+                  class="object-cover hover:opacity-85 duration-200 rounded-md w-full h-full"
+                />
+              </div>
+              <div class="flex flex-col p-2 rounded-md bg-gray-100 text-right mb-3 w-full items-end gap-2">
+                <h3>اسم القسم</h3>
+                <div class="flex items-center gap-3">
+                  <span
+                    class="w-fit self-end py-1 px-2 text-sm rounded-full bg-yellow-400 hover:bg-yellow-300 duration-200"
+                    >150</span
+                  >
+                  <span>السعر</span>
+                </div>
+                <p class="text-sm text-gray-500 pb-2">وصف قصير عشان تضيفه يا محموووووووووود</p>
+              </div>
+            </div>
+            <div class="swiper-slide cursor-pointer bg-gray-100">
+              <div class="rounded-md w-full">
+                <img
+                  src="/qism.jpg"
+                  alt=""
+                  class="object-cover hover:opacity-85 duration-200 rounded-md w-full h-full"
+                />
+              </div>
+              <div class="flex flex-col p-2 rounded-md bg-gray-100 text-right mb-3 w-full items-end gap-2">
+                <h3>اسم القسم</h3>
+                <div class="flex items-center gap-3">
+                  <span
+                    class="w-fit self-end py-1 px-2 text-sm rounded-full bg-yellow-400 hover:bg-yellow-300 duration-200"
+                    >150</span
+                  >
+                  <span>السعر</span>
+                </div>
+                <p class="text-sm pb-2 text-gray-500">وصف قصير عشان تضيفه يا محموووووووووود</p>
+              </div>
+            </div>
+            <div class="swiper-slide cursor-pointer bg-gray-100">
+              <div class="rounded-md w-full">
+                <img
+                  src="/qism.jpg"
+                  alt=""
+                  class="object-cover hover:opacity-85 duration-200 rounded-md w-full h-full"
+                />
+              </div>
+              <div class="flex flex-col p-2 rounded-md bg-gray-100 text-right mb-3 w-full items-end gap-2">
+                <h3>اسم القسم</h3>
+                <div class="flex items-center gap-3">
+                  <span
+                    class="w-fit self-end py-1 px-2 text-sm rounded-full bg-yellow-400 hover:bg-yellow-300 duration-200"
+                    >150</span
+                  >
+                  <span>السعر</span>
+                </div>
+                <p class="text-sm text-gray-500 pb-2">وصف قصير عشان تضيفه يا محموووووووووود</p>
+              </div>
+            </div>
+            <div class="swiper-slide cursor-pointer bg-gray-100">
+              <div class="rounded-md w-full">
+                <img
+                  src="/qism.jpg"
+                  alt=""
+                  class="object-cover hover:opacity-85 duration-200 rounded-md w-full h-full"
+                />
+              </div>
+              <div class="flex flex-col p-2 rounded-md bg-gray-100 text-right mb-3 w-full items-end gap-2">
+                <h3>اسم القسم</h3>
+                <div class="flex items-center gap-3">
+                  <span
+                    class="w-fit self-end py-1 px-2 text-sm rounded-full bg-yellow-400 hover:bg-yellow-300 duration-200"
+                    >150</span
+                  >
+                  <span>السعر</span>
+                </div>
+                <p class="text-sm text-gray-500 pb-2">وصف قصير عشان تضيفه يا محموووووووووود</p>
+              </div>
+            </div>
+            <div class="swiper-slide cursor-pointer bg-gray-100">
+              <div class="rounded-md w-full">
+                <img
+                  src="/qism.jpg"
+                  alt=""
+                  class="object-cover hover:opacity-85 duration-200 rounded-md w-full h-full"
+                />
+              </div>
+              <div class="flex flex-col p-2 rounded-md bg-gray-100 text-right mb-3 w-full items-end gap-2">
+                <h3>اسم القسم</h3>
+                <div class="flex items-center gap-3">
+                  <span
+                    class="w-fit self-end py-1 px-2 text-sm rounded-full bg-yellow-400 hover:bg-yellow-300 duration-200"
+                    >150</span
+                  >
+                  <span>السعر</span>
+                </div>
+                <p class="text-sm text-gray-500 pb-2">وصف قصير عشان تضيفه يا محموووووووووود</p>
+              </div>
+            </div>
+            <div class="swiper-slide cursor-pointer bg-gray-100">
+              <div class="rounded-md w-full">
+                <img
+                  src="/qism.jpg"
+                  alt=""
+                  class="object-cover hover:opacity-85 duration-200 rounded-md w-full h-full"
+                />
+              </div>
+              <div class="flex flex-col p-2 rounded-md bg-gray-100 text-right mb-3 w-full items-end gap-2">
+                <h3>اسم القسم</h3>
+                <div class="flex items-center gap-3">
+                  <span
+                    class="w-fit self-end py-1 px-2 text-sm rounded-full bg-yellow-400 hover:bg-yellow-300 duration-200"
+                    >150</span
+                  >
+                  <span>السعر</span>
+                </div>
+                <p class="text-sm text-gray-500 pb-2">وصف قصير عشان تضيفه يا محموووووووووود</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination swiper-pagination-yellow"></div>
+          <div class="swiper-button-prev swiper-button-yellow"></div>
+          <div class="swiper-button-next swiper-button-yellow"></div>
+        </div>
+      </section>
+      <br />
+      <br />
+      <section class="py-5 px-10 bg-white rounded-md">
+        <h1 class="text-3xl sm:text-5xl py-6 px-6 font-semibold">
+          جميع <span class="text-yellow-500 title2 t">المحاضرات</span>
+        </h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-5 md:pt-20 items-center gap-5">
+          <div class="flex bg-gray-100 cursor-pointer flex-col items-center gap-2">
+            <div class="rounded-md">
+              <img src="/qism.jpg" alt="" class="object-cover hover:opacity-85 duration-200 rounded-md w-full h-full" />
+            </div>
+            <div class="self-end p-2 rounded-md w-full gap-2">
+              <h2 class="font-semibold text-gray-800">اسم المحاضرة</h2>
+              <div class="flex items-center justify-between">
+                <h3 class="font-semibold flex flex-row-reverse gap-3 text-gray-700">
+                  :نوع المحاضرة<span class="text-yellow-500 t">pdf</span>
+                </h3>
+                <h3 class="font-semibold flex flex-row-reverse gap-3 mt-1 text-gray-700">
+                  :السعر
+                  <span
+                    class="w-fit self-end py-1 px-2 text-sm rounded-full bg-yellow-400 hover:bg-yellow-300 duration-200"
+                    >150</span
+                  >
+                </h3>
+              </div>
+            </div>
+            <p class="text-sm text-gray-500 pb-2">وصف قصير عشان تضيفه يا محموووووووووود</p>
+          </div>
+          <div class="flex bg-gray-100 cursor-pointer flex-col items-center gap-2">
+            <div class="rounded-md">
+              <img src="/qism.jpg" alt="" class="object-cover hover:opacity-85 duration-200 rounded-md w-full h-full" />
+            </div>
+            <div class="self-end p-2 rounded-md w-full gap-2">
+              <h2 class="font-semibold text-gray-800">اسم المحاضرة</h2>
+              <div class="flex items-center justify-between">
+                <h3 class="font-semibold flex flex-row-reverse gap-3 text-gray-700">
+                  :نوع المحاضرة<span class="text-yellow-500 t">pdf</span>
+                </h3>
+                <h3 class="font-semibold flex flex-row-reverse gap-3 mt-1 text-gray-700">
+                  :السعر
+                  <span
+                    class="w-fit self-end py-1 px-2 text-sm rounded-full bg-yellow-400 hover:bg-yellow-300 duration-200"
+                    >150</span
+                  >
+                </h3>
+              </div>
+            </div>
+            <p class="text-sm text-gray-500 pb-2">وصف قصير عشان تضيفه يا محموووووووووود</p>
+          </div>
+          <div class="flex bg-gray-100 cursor-pointer flex-col items-center gap-2">
+            <div class="rounded-md">
+              <img src="/qism.jpg" alt="" class="object-cover hover:opacity-85 duration-200 rounded-md w-full h-full" />
+            </div>
+            <div class="self-end p-2 rounded-md w-full gap-2">
+              <h2 class="font-semibold text-gray-800">اسم المحاضرة</h2>
+              <div class="flex items-center justify-between">
+                <h3 class="font-semibold flex flex-row-reverse gap-3 text-gray-700">
+                  :نوع المحاضرة<span class="text-yellow-500 t">pdf</span>
+                </h3>
+                <h3 class="font-semibold flex flex-row-reverse gap-3 mt-1 text-gray-700">
+                  :السعر
+                  <span
+                    class="w-fit self-end py-1 px-2 text-sm rounded-full bg-yellow-400 hover:bg-yellow-300 duration-200"
+                    >150</span
+                  >
+                </h3>
+              </div>
+            </div>
+            <p class="text-sm text-gray-500 pb-2">وصف قصير عشان تضيفه يا محموووووووووود</p>
+          </div>
+          <div class="flex bg-gray-100 cursor-pointer flex-col items-center gap-2">
+            <div class="rounded-md">
+              <img src="/qism.jpg" alt="" class="object-cover hover:opacity-85 duration-200 rounded-md w-full h-full" />
+            </div>
+            <div class="self-end p-2 rounded-md w-full gap-2">
+              <h2 class="font-semibold text-gray-800">اسم المحاضرة</h2>
+              <div class="flex items-center justify-between">
+                <h3 class="font-semibold flex flex-row-reverse gap-3 text-gray-700">
+                  :نوع المحاضرة<span class="text-yellow-500 t">pdf</span>
+                </h3>
+                <h3 class="font-semibold flex flex-row-reverse gap-3 mt-1 text-gray-700">
+                  :السعر
+                  <span
+                    class="w-fit self-end py-1 px-2 text-sm rounded-full bg-yellow-400 hover:bg-yellow-300 duration-200"
+                    >150</span
+                  >
+                </h3>
+              </div>
+            </div>
+            <p class="text-sm text-gray-500 pb-2">وصف قصير عشان تضيفه يا محموووووووووود</p>
+          </div>
+          <div class="flex bg-gray-100 cursor-pointer flex-col items-center gap-2">
+            <div class="rounded-md">
+              <img src="/qism.jpg" alt="" class="object-cover hover:opacity-85 duration-200 rounded-md w-full h-full" />
+            </div>
+            <div class="self-end p-2 rounded-md w-full gap-2">
+              <h2 class="font-semibold text-gray-800">اسم المحاضرة</h2>
+              <div class="flex items-center justify-between">
+                <h3 class="font-semibold flex flex-row-reverse gap-3 text-gray-700">
+                  :نوع المحاضرة<span class="text-yellow-500 t">pdf</span>
+                </h3>
+                <h3 class="font-semibold flex flex-row-reverse gap-3 mt-1 text-gray-700">
+                  :السعر
+                  <span
+                    class="w-fit self-end py-1 px-2 text-sm rounded-full bg-yellow-400 hover:bg-yellow-300 duration-200"
+                    >150</span
+                  >
+                </h3>
+              </div>
+            </div>
+            <p class="text-sm text-gray-500 pb-2">وصف قصير عشان تضيفه يا محموووووووووود</p>
+          </div>
+          <div class="flex bg-gray-100 cursor-pointer flex-col items-center gap-2">
+            <div class="rounded-md">
+              <img src="/qism.jpg" alt="" class="object-cover hover:opacity-85 duration-200 rounded-md w-full h-full" />
+            </div>
+            <div class="self-end p-2 rounded-md w-full gap-2">
+              <h2 class="font-semibold text-gray-800">اسم المحاضرة</h2>
+              <div class="flex items-center justify-between">
+                <h3 class="font-semibold flex flex-row-reverse gap-3 text-gray-700">
+                  :نوع المحاضرة<span class="text-yellow-500 t">pdf</span>
+                </h3>
+                <h3 class="font-semibold flex flex-row-reverse gap-3 mt-1 text-gray-700">
+                  :السعر
+                  <span
+                    class="w-fit self-end py-1 px-2 text-sm rounded-full bg-yellow-400 hover:bg-yellow-300 duration-200"
+                    >150</span
+                  >
+                </h3>
+              </div>
+            </div>
+            <p class="text-sm text-gray-500 pb-2">وصف قصير عشان تضيفه يا محموووووووووود</p>
+          </div>
+          <div class="flex bg-gray-100 cursor-pointer flex-col items-center gap-2">
+            <div class="rounded-md">
+              <img src="/qism.jpg" alt="" class="object-cover hover:opacity-85 duration-200 rounded-md w-full h-full" />
+            </div>
+            <div class="self-end p-2 rounded-md w-full gap-2">
+              <h2 class="font-semibold text-gray-800">اسم المحاضرة</h2>
+              <div class="flex items-center justify-between">
+                <h3 class="font-semibold flex flex-row-reverse gap-3 text-gray-700">
+                  :نوع المحاضرة<span class="text-yellow-500 t">pdf</span>
+                </h3>
+                <h3 class="font-semibold flex flex-row-reverse gap-3 mt-1 text-gray-700">
+                  :السعر
+                  <span
+                    class="w-fit self-end py-1 px-2 text-sm rounded-full bg-yellow-400 hover:bg-yellow-300 duration-200"
+                    >150</span
+                  >
+                </h3>
+              </div>
+            </div>
+            <p class="text-sm text-gray-500 pb-2">وصف قصير عشان تضيفه يا محموووووووووود</p>
+          </div>
+          <div class="flex bg-gray-100 cursor-pointer flex-col items-center gap-2">
+            <div class="rounded-md">
+              <img src="/qism.jpg" alt="" class="object-cover hover:opacity-85 duration-200 rounded-md w-full h-full" />
+            </div>
+            <div class="self-end p-2 rounded-md w-full gap-2">
+              <h2 class="font-semibold text-gray-800">اسم المحاضرة</h2>
+              <div class="flex items-center justify-between">
+                <h3 class="font-semibold flex flex-row-reverse gap-3 text-gray-700">
+                  :نوع المحاضرة<span class="text-yellow-500 t">pdf</span>
+                </h3>
+                <h3 class="font-semibold flex flex-row-reverse gap-3 mt-1 text-gray-700">
+                  :السعر
+                  <span
+                    class="w-fit self-end py-1 px-2 text-sm rounded-full bg-yellow-400 hover:bg-yellow-300 duration-200"
+                    >150</span
+                  >
+                </h3>
+              </div>
+            </div>
+            <p class="text-sm text-gray-500 pb-2">وصف قصير عشان تضيفه يا محموووووووووود</p>
+          </div>
+          <div class="flex bg-gray-100 cursor-pointer flex-col items-center gap-2">
+            <div class="rounded-md">
+              <img src="/qism.jpg" alt="" class="object-cover hover:opacity-85 duration-200 rounded-md w-full h-full" />
+            </div>
+            <div class="self-end p-2 rounded-md w-full gap-2">
+              <h2 class="font-semibold text-gray-800">اسم المحاضرة</h2>
+              <div class="flex items-center justify-between">
+                <h3 class="font-semibold flex flex-row-reverse gap-3 text-gray-700">
+                  :نوع المحاضرة<span class="text-yellow-500 t">pdf</span>
+                </h3>
+                <h3 class="font-semibold flex flex-row-reverse gap-3 mt-1 text-gray-700">
+                  :السعر
+                  <span
+                    class="w-fit self-end py-1 px-2 text-sm rounded-full bg-yellow-400 hover:bg-yellow-300 duration-200"
+                    >150</span
+                  >
+                </h3>
+              </div>
+            </div>
+            <p class="text-sm text-gray-500 pb-2">وصف قصير عشان تضيفه يا محموووووووووود</p>
+          </div>
+        </div>
+      </section>
+      <section class="flex items-center gap-5 py-10 justify-center">
+        <button
+          class="py-2 px-4 text-gray-100 bg-yellow-500 hover:bg-transparent hover:text-yellow-500 font-semibold border-2 border-yellow-500 duration-200 rounded-md"
+        >
+          السابق
+        </button>
+        <div class="flex items-center gap-2">
+          <span
+            class="text-gray-100 p-2 flex justify-center items-center cursor-pointer w-[2rem] h-[2rem] text-center hover:text-gray-200 rounded-full bg-yellow-500 hover:bg-yellow-400 duration-200"
+            >1</span
+          >
+          <span
+            class="text-gray-100 p-2 flex justify-center items-center cursor-pointer w-[2rem] h-[2rem] text-center hover:text-gray-200 rounded-full bg-yellow-500 hover:bg-yellow-400 duration-200"
+            >2</span
+          >
+          <span
+            class="text-gray-100 p-2 flex justify-center items-center cursor-pointer w-[2rem] h-[2rem] text-center hover:text-gray-200 rounded-full bg-yellow-500 hover:bg-yellow-400 duration-200"
+            >3</span
+          >
+          ....
+        </div>
+        <button
+          class="py-2 px-4 text-gray-100 bg-yellow-500 hover:bg-transparent hover:text-yellow-500 font-semibold border-2 border-yellow-500 duration-200 rounded-md"
+        >
+          التالي
+        </button>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto",
+        spaceBetween: 30,
+        freeMode: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          // when window width is >= 768px
+          768: {
+            slidesPerView: 2,
+          },
+          // when window width is >= 1024px
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
