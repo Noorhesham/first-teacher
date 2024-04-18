@@ -1,27 +1,39 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const parallaxContainer = document.getElementById("parallaxContainer");
-  const parallaxContainer1 = document.getElementById("parallaxContainer1");
-  const parallaxContainer2 = document.getElementById("parallaxContainer2");
+  // Parallax effect
+  const parallaxContainers = document.querySelectorAll(".parallax-container");
   const parallaxImage = document.getElementById("parallaxImage");
 
   window.addEventListener("scroll", function () {
     const scrollY = window.scrollY;
-    parallaxContainer.style.transform = `translateY(-${scrollY * 1}px)`;
-    parallaxContainer1.style.transform = `translateY(-${scrollY * 0.8}px)`;
-    parallaxContainer2.style.transform = `translateY(-${scrollY * 0.8}px)`;
+    parallaxContainers.forEach(container => {
+      container.style.transform = `translateY(-${scrollY * 0.8}px)`;
+    });
     parallaxImage.style.top = `-${scrollY}px`;
   });
-});
-document.addEventListener("DOMContentLoaded", function () {
-  const navbar = document.getElementById("navbar");
-  const accordionItems = document.querySelectorAll('.accordion-item');
 
+  // Avatar menu
+  const avatar = document.querySelector('.avatar');
+  const menu = document.getElementById('menu');
+
+  avatar.addEventListener('click', function(event) {
+    event.stopPropagation();
+    menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+  });
+
+  document.addEventListener('click', function(event) {
+    if (event.target !== avatar && event.target !== menu && !menu.contains(event.target)) {
+      menu.style.display = 'none';
+    }
+  });
+
+  // Accordion
+  const accordionItems = document.querySelectorAll('.accordion-item');
 
   accordionItems.forEach(item => {
     item.addEventListener('click', function() {
       const accordionContent = this.nextElementSibling;
       const accordion = this.parentElement;
-      
+
       if (accordion.classList.contains('open')) {
         accordion.classList.remove('open');
         accordion.classList.add('close');
@@ -35,30 +47,29 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  // Navbar scroll behavior
+  const navbar = document.getElementById("navbar");
+
   window.addEventListener("scroll", function () {
-    if (window.scrollY > 100) {
-      navbar.classList.add("scrolled");
-    } else {
-      navbar.classList.remove("scrolled");
-    }
-  });
-});
-const inputFields = document.querySelectorAll(".input-field");
-
-inputFields.forEach((input) => {
-  input.addEventListener("focus", () => {
-    input.parentElement.firstElementChild.classList.add("focused");
+    navbar.classList.toggle("scrolled", window.scrollY > 100);
+    menu.style.display = 'none';
   });
 
-  input.addEventListener("blur", () => {
-    input.parentElement.firstElementChild.classList.remove("focused");
-  });
+  // Input field animations
+  const inputFields = document.querySelectorAll(".input-field");
 
-  input.addEventListener("input", () => {
-    if (input.value) {
-      input.parentElement.classList.add("has-content");
-    } else {
-      input.parentElement.classList.remove("has-content");
-    }
+  inputFields.forEach((input) => {
+    input.addEventListener("focus", () => {
+      input.parentElement.firstElementChild.classList.add("focused");
+    });
+
+    input.addEventListener("blur", () => {
+      input.parentElement.firstElementChild.classList.remove("focused");
+    });
+
+    input.addEventListener("input", () => {
+      input.parentElement.classList.toggle("has-content", input.value);
+    });
   });
 });

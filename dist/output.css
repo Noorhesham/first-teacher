@@ -1002,6 +1002,10 @@ video {
   height: 2rem;
 }
 
+.h-\[4rem\] {
+  height: 4rem;
+}
+
 .h-full {
   height: 100%;
 }
@@ -1028,6 +1032,14 @@ video {
 
 .w-\[30rem\] {
   width: 30rem;
+}
+
+.w-\[45rem\] {
+  width: 45rem;
+}
+
+.w-\[4rem\] {
+  width: 4rem;
 }
 
 .w-\[6rem\] {
@@ -2633,6 +2645,11 @@ video {
   color: rgb(107 114 128 / 0.6);
 }
 
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
 .text-gray-700 {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
@@ -3290,6 +3307,7 @@ body::selection {
   padding: 10px;
   cursor: pointer;
   position: relative;
+  padding-top:2rem ;
 }
 
 .accordion-content {
@@ -3299,6 +3317,10 @@ body::selection {
 
 .accordion.open .accordion-content {
   animation: slideIn 0.5s ease-out forwards;
+}
+
+.accordion.open .accordion-item {
+  background-color: rgba(247, 114, 114, 0.601);
 }
 
 .accordion.close .accordion-content {
@@ -3322,6 +3344,14 @@ body::selection {
 .accordion.open .accordion-icon:before {
   content: "\2796";
   /* Unicode character for "minus" sign */
+}
+
+.arrow-icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.accordion.open .arrow-icon {
+  transform: rotate(180deg);
 }
 
 /* Animation keyframes */
@@ -3348,6 +3378,38 @@ body::selection {
     max-height: 0;
     opacity: 0;
   }
+}
+
+.avatar {
+  cursor: pointer;
+  position: relative;
+}
+
+/* Style for menu */
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  /* Adjust as needed */
+  left: 0;
+  /* Adjust as needed */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.menu-item {
+  width: 100%;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: #333;
+  border-radius: .5rem;
+}
+
+.menu-item:hover {
+  background-color: #f9f9f9;
 }
 
 @media (min-width: 640px) {
