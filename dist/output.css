@@ -739,20 +739,12 @@ video {
   top: 10rem;
 }
 
-.top-\[12\.5rem\] {
-  top: 12.5rem;
-}
-
 .top-\[23rem\] {
   top: 23rem;
 }
 
 .top-\[5rem\] {
   top: 5rem;
-}
-
-.top-\[4\.5rem\] {
-  top: 4.5rem;
 }
 
 .isolate {
@@ -781,6 +773,10 @@ video {
 
 .z-\[5\] {
   z-index: 5;
+}
+
+.z-\[-1\] {
+  z-index: -1;
 }
 
 .col-span-2 {
@@ -2448,6 +2444,10 @@ video {
   padding-top: 1.5rem;
 }
 
+.pt-0 {
+  padding-top: 0px;
+}
+
 .text-left {
   text-align: left;
 }
@@ -3166,6 +3166,13 @@ body::selection {
   transform: skewX(-20deg);
 }
 
+@media (max-width: 768px) {
+  .title:after {
+    bottom: -14%;
+    height: 7rem;
+  }
+}
+
 .scrolled {
   transition: all .5s;
   background-color: rgba(255, 255, 255, 0.733);
@@ -3593,6 +3600,10 @@ body::selection {
     margin-top: 0px;
   }
 
+  .md\:mb-5 {
+    margin-bottom: 1.25rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -3637,6 +3648,14 @@ body::selection {
     gap: 0.5rem;
   }
 
+  .md\:gap-8 {
+    gap: 2rem;
+  }
+
+  .md\:gap-3 {
+    gap: 0.75rem;
+  }
+
   .md\:bg-yellow-400 {
     --tw-bg-opacity: 1;
     background-color: rgb(250 204 21 / var(--tw-bg-opacity));
@@ -3644,10 +3663,6 @@ body::selection {
 
   .md\:p-2 {
     padding: 0.5rem;
-  }
-
-  .md\:p-1 {
-    padding: 0.25rem;
   }
 
   .md\:px-10 {
@@ -3697,6 +3712,14 @@ body::selection {
 
   .md\:pt-20 {
     padding-top: 5rem;
+  }
+
+  .md\:pt-0 {
+    padding-top: 0px;
+  }
+
+  .md\:pb-4 {
+    padding-bottom: 1rem;
   }
 
   .md\:text-3xl {

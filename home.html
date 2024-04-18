@@ -56,10 +56,10 @@
   </nav>
   <main class="main">
     <section class="relative overflow-hidden min-h-[100vh] pt-20 flex items-center justify-center">
-      <div id="parallaxContainer" class="absolute top-32 noto-nastaliq w-full">
+      <div id="parallaxContainer" class="absolute z-[1]  parallax-container top-32 noto-nastaliq w-full">
         <img id="parallaxImage" src="/rotate.png"
           class="absolute md:block hidden  w-[30rem] z-[5] right-14 animate-spin" alt="" />
-        <h2 class="text-xl text-gray-500/60 font-bold text-center mt-20 absolute top-20` left-10">لا أله الا الله</h2>
+        <h2 class="text-xl text-gray-500/60 z-[-1] font-bold text-center mt-20 absolute top-20` left-10">لا أله الا الله</h2>
         <h2
           class="text-xl text-gray-500/60 font-bold text-center mt-40 absolute bottom-[-20rem] left-1/2 transform -translate-x-1/2">
           لا أله الا الله
@@ -90,7 +90,7 @@
           </p>
           <div class="changa ml-auto m-auto">
             <a href="#"
-              class="py-2 px-4 flex items-center gap-2 text-lg bg-yellow-600 rounded-lg shadow-md text-gray-100 hover:bg-transparent border-2 border-yellow-600 hover:text-yellow-600 duration-200">
+              class="py-2 z-10 relative px-4 flex items-center gap-2 text-lg bg-yellow-600 rounded-lg shadow-md text-gray-100 hover:bg-transparent border-2 border-yellow-600 hover:text-yellow-600 duration-200">
               تصفح المراحل<i class="fas fa-signal"></i>
             </a>
           </div>
@@ -108,14 +108,14 @@
       <div id="parallaxContainer2" class="absolute right-10 top-[23rem]">
         <img src="/fanos.png" class="w-[8rem]" alt="" />
       </div>
-      <div class="rounded-lg bg-white shadow-md flex sm:flex-row flex-col items-stretch justify-center gap-8 mb-5">
-        <div class="flex flex-col gap-3 pb-4 text-3xl  md:text-5xl items-center justify-center">
+      <div class="rounded-lg bg-white shadow-md flex sm:flex-row flex-col items-stretch justify-center gap-3 md:gap-8 mb-5">
+        <div class="flex flex-col pt-5 md:pt-0 gap-2 md:gap-3 md:pb-4 text-3xl  md:text-5xl items-center justify-center">
           <h1 class="mb-5">إنضم إلينا</h1>
           <a href="signup.html"
             class="py-1 px-1 md:py-2 md:px-4 text-sm md:text-lg flex items-center md:gap-2 bg-yellow-600 rounded-lg shadow-md text-gray-100 hover:bg-transparent border-2 border-yellow-600 hover:text-yellow-600 duration-200">
             ! سجل بياناتك <i class="fa-solid fa-plus" aria-hidden="true"></i>
           </a>
-        </div><br>
+        </div>
         <div class="flex flex-col relative items-center gap-2">
           <div class="relative w-full h-full">
             <img src="/card.png" class="object-cover w-full h-full">

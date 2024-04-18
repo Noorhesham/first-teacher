@@ -61,6 +61,12 @@ body::selection {
   bottom: -43%;
   transform: skewX(-20deg);   
 }
+@media (max-width: 768px) {
+  .title:after {
+    bottom: -14%;
+    height: 7rem;
+  }
+}
 .scrolled {
   transition: all .5s;
   background-color: rgba(255, 255, 255, 0.733); 
