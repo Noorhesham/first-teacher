@@ -182,9 +182,17 @@ body::selection {
 .swiper-pagination-bullet {
   background-color: rgb(247, 196, 27) !important;
 }
-
+.swiper-pagination{
+  margin-top: 2rem !important;
+}
 .swiper-button-prev, .swiper-button-next {
   color: rgb(247, 196, 27) !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .swiper-button-prev, .swiper-button-next {
+    display: none !important;
+  }
 }
 
 .white-overlay {
