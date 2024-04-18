@@ -14,7 +14,27 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 document.addEventListener("DOMContentLoaded", function () {
   const navbar = document.getElementById("navbar");
+  const accordionItems = document.querySelectorAll('.accordion-item');
 
+
+  accordionItems.forEach(item => {
+    item.addEventListener('click', function() {
+      const accordionContent = this.nextElementSibling;
+      const accordion = this.parentElement;
+      
+      if (accordion.classList.contains('open')) {
+        accordion.classList.remove('open');
+        accordion.classList.add('close');
+        setTimeout(() => {
+          accordionContent.style.display = 'none';
+          accordion.classList.remove('close');
+        }, 300); // Wait for the animation to complete
+      } else {
+        accordion.classList.add('open');
+        accordionContent.style.display = 'block';
+      }
+    });
+  });
   window.addEventListener("scroll", function () {
     if (window.scrollY > 100) {
       navbar.classList.add("scrolled");

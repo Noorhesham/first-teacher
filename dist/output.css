@@ -3276,6 +3276,80 @@ body::selection {
   /* Ensure the overlay appears above other content */
 }
 
+/* Style for accordion */
+
+.accordion {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.accordion-item {
+  background-color: #f9f9f9;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px;
+}
+
+.accordion.open .accordion-content {
+  animation: slideIn 0.5s ease-out forwards;
+}
+
+.accordion.close .accordion-content {
+  animation: slideOut 0.5s ease-out forwards;
+}
+
+.accordion-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.accordion-icon:before {
+  content: "\02795";
+  /* Unicode character for "plus" sign */
+  font-size: 1.2em;
+  color: #555;
+}
+
+.accordion.open .accordion-icon:before {
+  content: "\2796";
+  /* Unicode character for "minus" sign */
+}
+
+/* Animation keyframes */
+
+@keyframes slideIn {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+
+  to {
+    max-height: 500px;
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    max-height: 500px;
+    opacity: 1;
+  }
+
+  to {
+    max-height: 0;
+    opacity: 0;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
